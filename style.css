@@ -1,0 +1,21 @@
+body {
+    background-color: #83ceeb;
+}
+
+h1 {
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 100px;
+    justify-self: center;
+}
+
+#center {
+    width: 50%;
+    margin: auto;
+}
+
+button {
+    padding: 10px;
+    background-color: aliceblue;
+    border-radius: 16px;
+}

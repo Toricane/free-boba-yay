@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hello there</title>
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="center">
+            <h1>WHy are you here?</h1>
+            <button onclick="run()">hello boba?</button>
+            <div id="yay"></div>
+        </div>
+        <script>
+            counter = 1
+
+            function generateRandomHexCode() {
+                let hexCode = "#";
+                const hexDigits = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f'];
+            
+                for (let i = 0; i < 6; i++) {
+                    hexCode += hexDigits[Math.floor(Math.random() * hexDigits.length)];
+                }
+            
+                return hexCode;
+            }
+
+            function run() {
+                const div = document.getElementById("yay");
+                
+                div.innerHTML += `<p style="color: ${generateRandomHexCode()}">Hello BOBA yay ${counter}</p>`;
+                counter += 1;
+            }
+        </script>
+    </body>
+</html>
